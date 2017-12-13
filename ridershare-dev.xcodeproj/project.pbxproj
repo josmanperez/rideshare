@@ -1,0 +1,404 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9205D2BB4C93A5C095F7DBC8 /* Pods_ridershare_dev.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 075819B81FB0C680D46856A2 /* Pods_ridershare_dev.framework */; };
+		99B9F4091FE15CA100E52A84 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99B9F4081FE15CA100E52A84 /* AppDelegate.swift */; };
+		99B9F40B1FE15CA100E52A84 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99B9F40A1FE15CA100E52A84 /* ViewController.swift */; };
+		99B9F40E1FE15CA100E52A84 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 99B9F40C1FE15CA100E52A84 /* Main.storyboard */; };
+		99B9F4101FE15CA100E52A84 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 99B9F40F1FE15CA100E52A84 /* Assets.xcassets */; };
+		99B9F4131FE15CA100E52A84 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 99B9F4111FE15CA100E52A84 /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		075819B81FB0C680D46856A2 /* Pods_ridershare_dev.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ridershare_dev.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		16EBBED3D42121B03ABAB9D8 /* Pods-ridershare-dev.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ridershare-dev.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ridershare-dev/Pods-ridershare-dev.debug.xcconfig"; sourceTree = "<group>"; };
+		6E2900A40398938541DE32DA /* Pods-ridershare-dev.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ridershare-dev.release.xcconfig"; path = "Pods/Target Support Files/Pods-ridershare-dev/Pods-ridershare-dev.release.xcconfig"; sourceTree = "<group>"; };
+		99B9F4051FE15CA100E52A84 /* ridershare-dev.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ridershare-dev.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		99B9F4081FE15CA100E52A84 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		99B9F40A1FE15CA100E52A84 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		99B9F40D1FE15CA100E52A84 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		99B9F40F1FE15CA100E52A84 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		99B9F4121FE15CA100E52A84 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		99B9F4141FE15CA100E52A84 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		99B9F4021FE15CA100E52A84 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9205D2BB4C93A5C095F7DBC8 /* Pods_ridershare_dev.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		006D6D3DF494A96844B2175D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				075819B81FB0C680D46856A2 /* Pods_ridershare_dev.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		97ACF2657E5B0BC6118678AA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				16EBBED3D42121B03ABAB9D8 /* Pods-ridershare-dev.debug.xcconfig */,
+				6E2900A40398938541DE32DA /* Pods-ridershare-dev.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		99B9F3FC1FE15CA000E52A84 = {
+			isa = PBXGroup;
+			children = (
+				99B9F4071FE15CA100E52A84 /* ridershare-dev */,
+				99B9F4061FE15CA100E52A84 /* Products */,
+				97ACF2657E5B0BC6118678AA /* Pods */,
+				006D6D3DF494A96844B2175D /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		99B9F4061FE15CA100E52A84 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				99B9F4051FE15CA100E52A84 /* ridershare-dev.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		99B9F4071FE15CA100E52A84 /* ridershare-dev */ = {
+			isa = PBXGroup;
+			children = (
+				99B9F4081FE15CA100E52A84 /* AppDelegate.swift */,
+				99B9F40A1FE15CA100E52A84 /* ViewController.swift */,
+				99B9F40C1FE15CA100E52A84 /* Main.storyboard */,
+				99B9F40F1FE15CA100E52A84 /* Assets.xcassets */,
+				99B9F4111FE15CA100E52A84 /* LaunchScreen.storyboard */,
+				99B9F4141FE15CA100E52A84 /* Info.plist */,
+			);
+			path = "ridershare-dev";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		99B9F4041FE15CA100E52A84 /* ridershare-dev */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 99B9F4171FE15CA100E52A84 /* Build configuration list for PBXNativeTarget "ridershare-dev" */;
+			buildPhases = (
+				3D9788E59A9892735CB7E498 /* [CP] Check Pods Manifest.lock */,
+				99B9F4011FE15CA100E52A84 /* Sources */,
+				99B9F4021FE15CA100E52A84 /* Frameworks */,
+				99B9F4031FE15CA100E52A84 /* Resources */,
+				C0271D9B6A9AEAED2A57EB7C /* [CP] Embed Pods Frameworks */,
+				08BC14068A9A58E03A969EA4 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "ridershare-dev";
+			productName = "ridershare-dev";
+			productReference = 99B9F4051FE15CA100E52A84 /* ridershare-dev.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		99B9F3FD1FE15CA000E52A84 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0900;
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = "Josman Pérez Expósito";
+				TargetAttributes = {
+					99B9F4041FE15CA100E52A84 = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 99B9F4001FE15CA000E52A84 /* Build configuration list for PBXProject "ridershare-dev" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 99B9F3FC1FE15CA000E52A84;
+			productRefGroup = 99B9F4061FE15CA100E52A84 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				99B9F4041FE15CA100E52A84 /* ridershare-dev */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		99B9F4031FE15CA100E52A84 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				99B9F4131FE15CA100E52A84 /* LaunchScreen.storyboard in Resources */,
+				99B9F4101FE15CA100E52A84 /* Assets.xcassets in Resources */,
+				99B9F40E1FE15CA100E52A84 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		08BC14068A9A58E03A969EA4 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ridershare-dev/Pods-ridershare-dev-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3D9788E59A9892735CB7E498 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		C0271D9B6A9AEAED2A57EB7C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ridershare-dev/Pods-ridershare-dev-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		99B9F4011FE15CA100E52A84 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				99B9F40B1FE15CA100E52A84 /* ViewController.swift in Sources */,
+				99B9F4091FE15CA100E52A84 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		99B9F40C1FE15CA100E52A84 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				99B9F40D1FE15CA100E52A84 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		99B9F4111FE15CA100E52A84 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				99B9F4121FE15CA100E52A84 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		99B9F4151FE15CA100E52A84 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		99B9F4161FE15CA100E52A84 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		99B9F4181FE15CA100E52A84 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 16EBBED3D42121B03ABAB9D8 /* Pods-ridershare-dev.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 26SDV6G7S9;
+				INFOPLIST_FILE = "ridershare-dev/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.perez.josman.ridershare-dev";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		99B9F4191FE15CA100E52A84 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6E2900A40398938541DE32DA /* Pods-ridershare-dev.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 26SDV6G7S9;
+				INFOPLIST_FILE = "ridershare-dev/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.perez.josman.ridershare-dev";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		99B9F4001FE15CA000E52A84 /* Build configuration list for PBXProject "ridershare-dev" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				99B9F4151FE15CA100E52A84 /* Debug */,
+				99B9F4161FE15CA100E52A84 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		99B9F4171FE15CA100E52A84 /* Build configuration list for PBXNativeTarget "ridershare-dev" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				99B9F4181FE15CA100E52A84 /* Debug */,
+				99B9F4191FE15CA100E52A84 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 99B9F3FD1FE15CA000E52A84 /* Project object */;
+}
