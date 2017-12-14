@@ -29,10 +29,12 @@
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="7mj-Yy-h0h">
                                 <rect key="frame" x="0.0" y="20" width="375" height="647"/>
                             </mapView>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Dbz-DL-JAw">
-                                <rect key="frame" x="0.0" y="20" width="375" height="90"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Dbz-DL-JAw" customClass="GradientView" customModule="ridershare_dev" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="20" width="375" height="130"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="130" id="TNE-ZD-qiA"/>
+                                </constraints>
                             </view>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="Ht8-rY-QVX">
                                 <rect key="frame" x="20" y="50" width="335" height="30"/>
@@ -58,7 +60,7 @@
                                             </label>
                                         </subviews>
                                     </stackView>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Tjk-kM-bT8">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sample-photo" translatesAutoresizingMaskIntoConstraints="NO" id="Tjk-kM-bT8" customClass="RoundImageView" customModule="ridershare_dev" customModuleProvider="target">
                                         <rect key="frame" x="305" y="0.0" width="30" height="30"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="30" id="66t-2k-sYp"/>
@@ -88,7 +90,7 @@
                                 </constraints>
                                 <state key="normal" image="centerMapBtn"/>
                             </button>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wCR-M3-DtA">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wCR-M3-DtA" customClass="RoundedShadowView" customModule="ridershare_dev" customModuleProvider="target">
                                 <rect key="frame" x="20" y="88" width="335" height="80"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="A8f-hB-GbH">
@@ -149,7 +151,6 @@
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstItem="A8f-hB-GbH" firstAttribute="centerX" secondItem="wCR-M3-DtA" secondAttribute="centerX" id="FBq-0p-irl"/>
                                     <constraint firstAttribute="height" constant="80" id="GQA-ge-dHh"/>
                                     <constraint firstItem="A8f-hB-GbH" firstAttribute="centerY" secondItem="wCR-M3-DtA" secondAttribute="centerY" id="Iir-ez-bCs"/>
                                     <constraint firstItem="A8f-hB-GbH" firstAttribute="leading" secondItem="wCR-M3-DtA" secondAttribute="leading" constant="22" id="m74-sf-EU9"/>
@@ -159,6 +160,7 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="Dbz-DL-JAw" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="3Ho-vY-xHc"/>
                             <constraint firstItem="Y4K-PL-N9A" firstAttribute="top" secondItem="sZE-mi-ATv" secondAttribute="bottom" constant="8" id="3aN-vc-gh3"/>
                             <constraint firstItem="Y4K-PL-N9A" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="5Rx-gl-MHD"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Ht8-rY-QVX" secondAttribute="trailing" constant="20" id="8K9-ed-ibu"/>
@@ -167,16 +169,21 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Y4K-PL-N9A" secondAttribute="bottom" constant="20" id="Ii6-Vj-7fx"/>
                             <constraint firstItem="7mj-Yy-h0h" firstAttribute="trailingMargin" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="JtV-aI-2mb"/>
                             <constraint firstItem="wCR-M3-DtA" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="TAq-e8-JHK"/>
+                            <constraint firstItem="Dbz-DL-JAw" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="UA6-gd-Fl3"/>
                             <constraint firstItem="wCR-M3-DtA" firstAttribute="top" secondItem="Ht8-rY-QVX" secondAttribute="bottom" constant="8" id="Ukp-YT-Tp4"/>
                             <constraint firstItem="7mj-Yy-h0h" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="bPP-U0-qNj"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Y4K-PL-N9A" secondAttribute="trailing" constant="20" id="cRl-r5-PxB"/>
                             <constraint firstItem="7mj-Yy-h0h" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="dhA-zQ-Gbe"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="sZE-mi-ATv" secondAttribute="trailing" constant="20" id="nlf-xk-vvs"/>
                             <constraint firstItem="7mj-Yy-h0h" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="nsZ-gD-Zsa"/>
+                            <constraint firstItem="Dbz-DL-JAw" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="pXp-lW-boD"/>
                             <constraint firstItem="Ht8-rY-QVX" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="30" id="rbB-H9-A5d"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="mapView" destination="7mj-Yy-h0h" id="ViU-bG-gXd"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -186,5 +193,6 @@
     <resources>
         <image name="centerMapBtn" width="62" height="62"/>
         <image name="menuSliderBtn" width="30" height="24"/>
+        <image name="sample-photo" width="320" height="320"/>
     </resources>
 </document>

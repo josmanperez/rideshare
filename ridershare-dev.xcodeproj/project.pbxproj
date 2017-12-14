@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		9205D2BB4C93A5C095F7DBC8 /* Pods_ridershare_dev.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 075819B81FB0C680D46856A2 /* Pods_ridershare_dev.framework */; };
+		99856DF11FE273E100AA586C /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99856DF01FE273E100AA586C /* GradientView.swift */; };
+		99856DF71FE27F1A00AA586C /* RoundImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99856DF61FE27F1A00AA586C /* RoundImageView.swift */; };
+		99856DF91FE2BD6200AA586C /* RoundedShadowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99856DF81FE2BD6200AA586C /* RoundedShadowView.swift */; };
+		99856DFC1FE2BE9B00AA586C /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99856DFB1FE2BE9B00AA586C /* Constant.swift */; };
+		99856DFE1FE2BF3D00AA586C /* CircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99856DFD1FE2BF3D00AA586C /* CircleView.swift */; };
 		99B9F4091FE15CA100E52A84 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99B9F4081FE15CA100E52A84 /* AppDelegate.swift */; };
 		99B9F40B1FE15CA100E52A84 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99B9F40A1FE15CA100E52A84 /* ViewController.swift */; };
 		99B9F40E1FE15CA100E52A84 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 99B9F40C1FE15CA100E52A84 /* Main.storyboard */; };
@@ -19,6 +24,11 @@
 		075819B81FB0C680D46856A2 /* Pods_ridershare_dev.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ridershare_dev.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		16EBBED3D42121B03ABAB9D8 /* Pods-ridershare-dev.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ridershare-dev.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ridershare-dev/Pods-ridershare-dev.debug.xcconfig"; sourceTree = "<group>"; };
 		6E2900A40398938541DE32DA /* Pods-ridershare-dev.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ridershare-dev.release.xcconfig"; path = "Pods/Target Support Files/Pods-ridershare-dev/Pods-ridershare-dev.release.xcconfig"; sourceTree = "<group>"; };
+		99856DF01FE273E100AA586C /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
+		99856DF61FE27F1A00AA586C /* RoundImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundImageView.swift; sourceTree = "<group>"; };
+		99856DF81FE2BD6200AA586C /* RoundedShadowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedShadowView.swift; sourceTree = "<group>"; };
+		99856DFB1FE2BE9B00AA586C /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		99856DFD1FE2BF3D00AA586C /* CircleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleView.swift; sourceTree = "<group>"; };
 		99B9F4051FE15CA100E52A84 /* ridershare-dev.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ridershare-dev.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		99B9F4081FE15CA100E52A84 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		99B9F40A1FE15CA100E52A84 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -57,6 +67,40 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		99856DED1FE2736200AA586C /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		99856DEE1FE2736B00AA586C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				99856DF01FE273E100AA586C /* GradientView.swift */,
+				99856DF61FE27F1A00AA586C /* RoundImageView.swift */,
+				99856DF81FE2BD6200AA586C /* RoundedShadowView.swift */,
+				99856DFD1FE2BF3D00AA586C /* CircleView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		99856DEF1FE2737600AA586C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			path = "New Group";
+			sourceTree = "<group>";
+		};
+		99856DFA1FE2BE8D00AA586C /* Constant */ = {
+			isa = PBXGroup;
+			children = (
+				99856DFB1FE2BE9B00AA586C /* Constant.swift */,
+			);
+			path = Constant;
+			sourceTree = "<group>";
+		};
 		99B9F3FC1FE15CA000E52A84 = {
 			isa = PBXGroup;
 			children = (
@@ -78,6 +122,10 @@
 		99B9F4071FE15CA100E52A84 /* ridershare-dev */ = {
 			isa = PBXGroup;
 			children = (
+				99856DFA1FE2BE8D00AA586C /* Constant */,
+				99856DEF1FE2737600AA586C /* Model */,
+				99856DEE1FE2736B00AA586C /* View */,
+				99856DED1FE2736200AA586C /* Controller */,
 				99B9F4081FE15CA100E52A84 /* AppDelegate.swift */,
 				99B9F40A1FE15CA100E52A84 /* ViewController.swift */,
 				99B9F40C1FE15CA100E52A84 /* Main.storyboard */,
@@ -212,7 +260,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				99B9F40B1FE15CA100E52A84 /* ViewController.swift in Sources */,
+				99856DF71FE27F1A00AA586C /* RoundImageView.swift in Sources */,
+				99856DF91FE2BD6200AA586C /* RoundedShadowView.swift in Sources */,
 				99B9F4091FE15CA100E52A84 /* AppDelegate.swift in Sources */,
+				99856DF11FE273E100AA586C /* GradientView.swift in Sources */,
+				99856DFE1FE2BF3D00AA586C /* CircleView.swift in Sources */,
+				99856DFC1FE2BE9B00AA586C /* Constant.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -351,7 +404,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 26SDV6G7S9;
+				DEVELOPMENT_TEAM = N926372A9H;
 				INFOPLIST_FILE = "ridershare-dev/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.perez.josman.ridershare-dev";
@@ -367,7 +420,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 26SDV6G7S9;
+				DEVELOPMENT_TEAM = N926372A9H;
 				INFOPLIST_FILE = "ridershare-dev/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.perez.josman.ridershare-dev";
