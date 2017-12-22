@@ -71,17 +71,32 @@
                                     <constraint firstAttribute="height" constant="30" id="Gq6-rx-n5w"/>
                                 </constraints>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y4K-PL-N9A">
-                                <rect key="frame" x="20" y="587" width="335" height="60"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mTo-cc-9Kv">
+                                <rect key="frame" x="0.0" y="587" width="375" height="80"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y4K-PL-N9A" customClass="RoundedShadowButton" customModule="ridershare_dev" customModuleProvider="target">
+                                        <rect key="frame" x="20" y="0.0" width="335" height="60"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="vP9-Cd-HxR"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Heavy" family="Avenir Next" pointSize="28"/>
+                                        <state key="normal" title="REQUEST RIDE">
+                                            <color key="titleColor" red="0.22352941179999999" green="0.22352941179999999" blue="0.22352941179999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="actionButtonWasPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lYf-vi-2vl"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="60" id="vP9-Cd-HxR"/>
+                                    <constraint firstAttribute="height" constant="80" id="34W-h7-FUL"/>
+                                    <constraint firstItem="Y4K-PL-N9A" firstAttribute="top" secondItem="mTo-cc-9Kv" secondAttribute="top" id="lWA-lX-V2w"/>
+                                    <constraint firstItem="Y4K-PL-N9A" firstAttribute="leading" secondItem="mTo-cc-9Kv" secondAttribute="leading" constant="20" id="mTn-rd-yMm"/>
+                                    <constraint firstAttribute="trailing" secondItem="Y4K-PL-N9A" secondAttribute="trailing" constant="20" id="qMS-tI-AvF"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="AvenirNext-Heavy" family="Avenir Next" pointSize="28"/>
-                                <state key="normal" title="REQUEST RIDE">
-                                    <color key="titleColor" red="0.22352941179999999" green="0.22352941179999999" blue="0.22352941179999999" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                            </button>
+                            </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sZE-mi-ATv">
                                 <rect key="frame" x="295" y="519" width="60" height="60"/>
                                 <constraints>
@@ -99,13 +114,18 @@
                                             <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="vPt-k3-Gek">
                                                 <rect key="frame" x="0.0" y="0.0" width="290" height="25"/>
                                                 <subviews>
-                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Y7h-L1-jCC">
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Y7h-L1-jCC" customClass="CircleView" customModule="ridershare_dev" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="5" width="15" height="15"/>
                                                         <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="15" id="5my-lU-ZQE"/>
                                                             <constraint firstAttribute="height" constant="15" id="hu3-CH-iPM"/>
                                                         </constraints>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                                <color key="value" red="0.054901960784313725" green="0.46274509803921571" blue="0.23529411764705882" alpha="1" colorSpace="calibratedRGB"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
                                                     </view>
                                                     <textField opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="My Location" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="euS-1X-RLj">
                                                         <rect key="frame" x="25" y="0.5" width="265" height="24"/>
@@ -127,13 +147,18 @@
                                             <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="KjQ-Ze-JLu">
                                                 <rect key="frame" x="0.0" y="36" width="290" height="25"/>
                                                 <subviews>
-                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oIi-Sl-IFz">
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oIi-Sl-IFz" customClass="CircleView" customModule="ridershare_dev" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="5" width="15" height="15"/>
                                                         <color key="backgroundColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="15" id="5vo-o7-iAb"/>
                                                             <constraint firstAttribute="height" constant="15" id="CTs-0H-8Ru"/>
                                                         </constraints>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                                <color key="value" red="0.30980392156862746" green="0.30980392156862746" blue="0.30980392156862746" alpha="1" colorSpace="calibratedRGB"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
                                                     </view>
                                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Where are you going?" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="XpJ-Bo-gVx">
                                                         <rect key="frame" x="25" y="1.5" width="265" height="22"/>
@@ -161,18 +186,18 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="Dbz-DL-JAw" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="3Ho-vY-xHc"/>
-                            <constraint firstItem="Y4K-PL-N9A" firstAttribute="top" secondItem="sZE-mi-ATv" secondAttribute="bottom" constant="8" id="3aN-vc-gh3"/>
-                            <constraint firstItem="Y4K-PL-N9A" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="5Rx-gl-MHD"/>
+                            <constraint firstItem="mTo-cc-9Kv" firstAttribute="top" secondItem="sZE-mi-ATv" secondAttribute="bottom" constant="8" id="4Ds-nJ-gno"/>
+                            <constraint firstItem="mTo-cc-9Kv" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="4k2-GV-8qR"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Ht8-rY-QVX" secondAttribute="trailing" constant="20" id="8K9-ed-ibu"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="wCR-M3-DtA" secondAttribute="trailing" constant="20" id="8sA-Xt-omJ"/>
                             <constraint firstItem="Ht8-rY-QVX" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="DBg-Tn-96X"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Y4K-PL-N9A" secondAttribute="bottom" constant="20" id="Ii6-Vj-7fx"/>
+                            <constraint firstItem="mTo-cc-9Kv" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="FyZ-Mu-SA3"/>
                             <constraint firstItem="7mj-Yy-h0h" firstAttribute="trailingMargin" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="JtV-aI-2mb"/>
                             <constraint firstItem="wCR-M3-DtA" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="TAq-e8-JHK"/>
                             <constraint firstItem="Dbz-DL-JAw" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="UA6-gd-Fl3"/>
                             <constraint firstItem="wCR-M3-DtA" firstAttribute="top" secondItem="Ht8-rY-QVX" secondAttribute="bottom" constant="8" id="Ukp-YT-Tp4"/>
                             <constraint firstItem="7mj-Yy-h0h" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="bPP-U0-qNj"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Y4K-PL-N9A" secondAttribute="trailing" constant="20" id="cRl-r5-PxB"/>
+                            <constraint firstItem="mTo-cc-9Kv" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="cjj-2K-hb1"/>
                             <constraint firstItem="7mj-Yy-h0h" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="dhA-zQ-Gbe"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="sZE-mi-ATv" secondAttribute="trailing" constant="20" id="nlf-xk-vvs"/>
                             <constraint firstItem="7mj-Yy-h0h" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="nsZ-gD-Zsa"/>
@@ -182,6 +207,7 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="actionButton" destination="Y4K-PL-N9A" id="NLm-XA-9E1"/>
                         <outlet property="mapView" destination="7mj-Yy-h0h" id="ViU-bG-gXd"/>
                     </connections>
                 </viewController>

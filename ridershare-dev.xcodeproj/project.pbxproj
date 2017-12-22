@@ -18,6 +18,7 @@
 		99B9F40E1FE15CA100E52A84 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 99B9F40C1FE15CA100E52A84 /* Main.storyboard */; };
 		99B9F4101FE15CA100E52A84 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 99B9F40F1FE15CA100E52A84 /* Assets.xcassets */; };
 		99B9F4131FE15CA100E52A84 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 99B9F4111FE15CA100E52A84 /* LaunchScreen.storyboard */; };
+		99C46E971FED1B8600A58FFD /* RoundedShadowButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99C46E961FED1B8600A58FFD /* RoundedShadowButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		99B9F40F1FE15CA100E52A84 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		99B9F4121FE15CA100E52A84 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		99B9F4141FE15CA100E52A84 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		99C46E961FED1B8600A58FFD /* RoundedShadowButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedShadowButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +83,7 @@
 				99856DF61FE27F1A00AA586C /* RoundImageView.swift */,
 				99856DF81FE2BD6200AA586C /* RoundedShadowView.swift */,
 				99856DFD1FE2BF3D00AA586C /* CircleView.swift */,
+				99C46E961FED1B8600A58FFD /* RoundedShadowButton.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -266,6 +269,7 @@
 				99856DF11FE273E100AA586C /* GradientView.swift in Sources */,
 				99856DFE1FE2BF3D00AA586C /* CircleView.swift in Sources */,
 				99856DFC1FE2BE9B00AA586C /* Constant.swift in Sources */,
+				99C46E971FED1B8600A58FFD /* RoundedShadowButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

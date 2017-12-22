@@ -12,6 +12,7 @@ import MapKit
 class ViewController: UIViewController, MKMapViewDelegate {
 
     @IBOutlet var mapView: MKMapView!
+    @IBOutlet var actionButton: RoundedShadowButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,5 +20,8 @@ class ViewController: UIViewController, MKMapViewDelegate {
         mapView.delegate = self
     }
 
+    @IBAction func actionButtonWasPressed(_ sender: RoundedShadowButton) {
+        actionButton.animateButton(shouldLoad: true, withMessage: nil)
+    }
 }
 
