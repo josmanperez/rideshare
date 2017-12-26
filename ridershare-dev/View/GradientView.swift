@@ -14,7 +14,6 @@ class GradientView: UIView {
     
     override func awakeFromNib() {
         setUpGradientView()
-        super.awakeFromNib()
     }
     
     func setUpGradientView() {
@@ -24,6 +23,13 @@ class GradientView: UIView {
         gradient.endPoint = CGPoint(x: 0, y: 1) // 1 means 100%
         gradient.locations = [0.8, 1.0] // First color starts at 80%
         self.layer.addSublayer(gradient)
+    }
+    
+    override func layoutSubviews() {
+        gradient.frame.size.width = UIScreen.main.bounds.width
+        gradient.frame.size.height = self.frame.height
+        super.layoutSubviews()
+        
     }
 
 }
