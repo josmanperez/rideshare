@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		9205D2BB4C93A5C095F7DBC8 /* Pods_ridershare_dev.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 075819B81FB0C680D46856A2 /* Pods_ridershare_dev.framework */; };
+		992DD3621FF390420012A7FD /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 992DD3611FF390420012A7FD /* DataService.swift */; };
 		997AF5011FF239CB00F6BE4B /* LeftSidePanelVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 997AF5001FF239CB00F6BE4B /* LeftSidePanelVC.swift */; };
 		997AF5031FF23A4600F6BE4B /* ContainerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 997AF5021FF23A4600F6BE4B /* ContainerVC.swift */; };
 		997AF5061FF23E0800F6BE4B /* CenterVCDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 997AF5051FF23E0800F6BE4B /* CenterVCDelegate.swift */; };
@@ -32,6 +33,7 @@
 		16EBBED3D42121B03ABAB9D8 /* Pods-ridershare-dev.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ridershare-dev.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ridershare-dev/Pods-ridershare-dev.debug.xcconfig"; sourceTree = "<group>"; };
 		6E2900A40398938541DE32DA /* Pods-ridershare-dev.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ridershare-dev.release.xcconfig"; path = "Pods/Target Support Files/Pods-ridershare-dev/Pods-ridershare-dev.release.xcconfig"; sourceTree = "<group>"; };
 		992DD35D1FF38CA50012A7FD /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		992DD3611FF390420012A7FD /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 		997AF5001FF239CB00F6BE4B /* LeftSidePanelVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeftSidePanelVC.swift; sourceTree = "<group>"; };
 		997AF5021FF23A4600F6BE4B /* ContainerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerVC.swift; sourceTree = "<group>"; };
 		997AF5051FF23E0800F6BE4B /* CenterVCDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CenterVCDelegate.swift; sourceTree = "<group>"; };
@@ -80,6 +82,14 @@
 				6E2900A40398938541DE32DA /* Pods-ridershare-dev.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		992DD35E1FF390160012A7FD /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				992DD3611FF390420012A7FD /* DataService.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 		997AF5041FF23DFC00F6BE4B /* Protocols */ = {
@@ -159,6 +169,7 @@
 		99B9F4071FE15CA100E52A84 /* ridershare-dev */ = {
 			isa = PBXGroup;
 			children = (
+				992DD35E1FF390160012A7FD /* Services */,
 				997AF5071FF2996400F6BE4B /* Extension */,
 				997AF5041FF23DFC00F6BE4B /* Protocols */,
 				99856DFA1FE2BE8D00AA586C /* Constant */,
@@ -307,6 +318,7 @@
 				997AF5031FF23A4600F6BE4B /* ContainerVC.swift in Sources */,
 				99B9F4091FE15CA100E52A84 /* AppDelegate.swift in Sources */,
 				99856DF11FE273E100AA586C /* GradientView.swift in Sources */,
+				992DD3621FF390420012A7FD /* DataService.swift in Sources */,
 				997AF50B1FF2A5EF00F6BE4B /* LoginVC.swift in Sources */,
 				99856DFE1FE2BF3D00AA586C /* CircleView.swift in Sources */,
 				99856DFC1FE2BE9B00AA586C /* Constant.swift in Sources */,
