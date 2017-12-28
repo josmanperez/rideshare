@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		9205D2BB4C93A5C095F7DBC8 /* Pods_ridershare_dev.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 075819B81FB0C680D46856A2 /* Pods_ridershare_dev.framework */; };
 		992DD3621FF390420012A7FD /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 992DD3611FF390420012A7FD /* DataService.swift */; };
+		9953CFF01FF4EDA70095652B /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9953CFEF1FF4EDA70095652B /* Error.swift */; };
+		9953CFF41FF4F2FB0095652B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9953CFF31FF4F2FB0095652B /* GoogleService-Info.plist */; };
 		997AF5011FF239CB00F6BE4B /* LeftSidePanelVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 997AF5001FF239CB00F6BE4B /* LeftSidePanelVC.swift */; };
 		997AF5031FF23A4600F6BE4B /* ContainerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 997AF5021FF23A4600F6BE4B /* ContainerVC.swift */; };
 		997AF5061FF23E0800F6BE4B /* CenterVCDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 997AF5051FF23E0800F6BE4B /* CenterVCDelegate.swift */; };
@@ -32,8 +34,9 @@
 		075819B81FB0C680D46856A2 /* Pods_ridershare_dev.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ridershare_dev.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		16EBBED3D42121B03ABAB9D8 /* Pods-ridershare-dev.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ridershare-dev.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ridershare-dev/Pods-ridershare-dev.debug.xcconfig"; sourceTree = "<group>"; };
 		6E2900A40398938541DE32DA /* Pods-ridershare-dev.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ridershare-dev.release.xcconfig"; path = "Pods/Target Support Files/Pods-ridershare-dev/Pods-ridershare-dev.release.xcconfig"; sourceTree = "<group>"; };
-		992DD35D1FF38CA50012A7FD /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		992DD3611FF390420012A7FD /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
+		9953CFEF1FF4EDA70095652B /* Error.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Error.swift; sourceTree = "<group>"; };
+		9953CFF31FF4F2FB0095652B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		997AF5001FF239CB00F6BE4B /* LeftSidePanelVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeftSidePanelVC.swift; sourceTree = "<group>"; };
 		997AF5021FF23A4600F6BE4B /* ContainerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerVC.swift; sourceTree = "<group>"; };
 		997AF5051FF23E0800F6BE4B /* CenterVCDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CenterVCDelegate.swift; sourceTree = "<group>"; };
@@ -90,6 +93,14 @@
 				992DD3611FF390420012A7FD /* DataService.swift */,
 			);
 			path = Services;
+			sourceTree = "<group>";
+		};
+		9953CFEE1FF4ED8B0095652B /* Error */ = {
+			isa = PBXGroup;
+			children = (
+				9953CFEF1FF4EDA70095652B /* Error.swift */,
+			);
+			path = Error;
 			sourceTree = "<group>";
 		};
 		997AF5041FF23DFC00F6BE4B /* Protocols */ = {
@@ -169,6 +180,8 @@
 		99B9F4071FE15CA100E52A84 /* ridershare-dev */ = {
 			isa = PBXGroup;
 			children = (
+				9953CFF31FF4F2FB0095652B /* GoogleService-Info.plist */,
+				9953CFEE1FF4ED8B0095652B /* Error */,
 				992DD35E1FF390160012A7FD /* Services */,
 				997AF5071FF2996400F6BE4B /* Extension */,
 				997AF5041FF23DFC00F6BE4B /* Protocols */,
@@ -181,7 +194,6 @@
 				99B9F40F1FE15CA100E52A84 /* Assets.xcassets */,
 				99B9F4111FE15CA100E52A84 /* LaunchScreen.storyboard */,
 				99B9F4141FE15CA100E52A84 /* Info.plist */,
-				992DD35D1FF38CA50012A7FD /* GoogleService-Info.plist */,
 			);
 			path = "ridershare-dev";
 			sourceTree = "<group>";
@@ -249,6 +261,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				99B9F4131FE15CA100E52A84 /* LaunchScreen.storyboard in Resources */,
+				9953CFF41FF4F2FB0095652B /* GoogleService-Info.plist in Resources */,
 				99B9F4101FE15CA100E52A84 /* Assets.xcassets in Resources */,
 				99B9F40E1FE15CA100E52A84 /* Main.storyboard in Resources */,
 			);
@@ -309,6 +322,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9953CFF01FF4EDA70095652B /* Error.swift in Sources */,
 				997AF5091FF2999000F6BE4B /* UIViewExt.swift in Sources */,
 				997AF5011FF239CB00F6BE4B /* LeftSidePanelVC.swift in Sources */,
 				99B9F40B1FE15CA100E52A84 /* HomeVC.swift in Sources */,

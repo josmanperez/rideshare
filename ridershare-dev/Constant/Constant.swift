@@ -13,3 +13,10 @@ class Constant {
     
     static let box_light_corner_radius:CGFloat = 5.0
 }
+
+struct LogInSigUp {
+    static let provider:String = "provider"
+    static let userIsDriver:String = "userIsDriver"
+    static let isPickupModeEnabled:String = "isPickupModeEnabled"
+    static let driverIsOnTrip:String = "driverIsOnTrip"
+}

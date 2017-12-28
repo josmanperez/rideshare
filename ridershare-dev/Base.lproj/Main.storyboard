@@ -389,7 +389,7 @@
                                                     </constraints>
                                                     <nil key="textColor"/>
                                                     <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="20"/>
-                                                    <textInputTraits key="textInputTraits"/>
+                                                    <textInputTraits key="textInputTraits" keyboardType="emailAddress"/>
                                                 </textField>
                                                 <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="BjV-B1-NgB" customClass="RoundedCornerTextField" customModule="ridershare_dev" customModuleProvider="target">
                                                     <rect key="frame" x="0.0" y="277" width="280" height="45"/>
@@ -413,6 +413,9 @@
                                                 <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                                 <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                             </state>
+                                            <connections>
+                                                <action selector="authButtonWasPressed:" destination="D7o-15-kK1" eventType="touchUpInside" id="JnH-xT-UyL"/>
+                                            </connections>
                                         </button>
                                     </subviews>
                                     <constraints>
@@ -443,6 +446,12 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="8Cs-P1-D4o"/>
                     </view>
+                    <connections>
+                        <outlet property="authButton" destination="lds-Ow-eve" id="k6E-Dp-cRz"/>
+                        <outlet property="emailField" destination="ykf-xQ-g6G" id="50J-2q-SmL"/>
+                        <outlet property="passwordField" destination="BjV-B1-NgB" id="HeC-Rh-vz1"/>
+                        <outlet property="segmentedControl" destination="VPW-vK-i7X" id="K8P-We-POQ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="88G-kb-0hb" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <stackView opaque="NO" contentMode="scaleToFill" id="NM7-wy-a6b">
