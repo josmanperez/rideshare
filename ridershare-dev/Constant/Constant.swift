@@ -19,4 +19,5 @@ struct LogInSigUp {
     static let userIsDriver:String = "userIsDriver"
     static let isPickupModeEnabled:String = "isPickupModeEnabled"
     static let driverIsOnTrip:String = "driverIsOnTrip"
+    
 }

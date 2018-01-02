@@ -16,7 +16,7 @@ class DataService {
     
     private var _REF_BASE    = DB_BASE
     private var _REF_USERS   = DB_BASE.child(databaseTypes.users.rawValue)
-    private var _REF_DRIVERS = DB_BASE.child(databaseTypes.drviers.rawValue)
+    private var _REF_DRIVERS = DB_BASE.child(databaseTypes.drivers.rawValue)
     private var _REF_TRIPS   = DB_BASE.child(databaseTypes.trips.rawValue)
     
     var REF_BASE: DatabaseReference? {
@@ -42,9 +42,9 @@ class DataService {
 }
 
 extension DataService {
-    fileprivate enum databaseTypes:String {
+    public enum databaseTypes:String {
         case users   = "users"
-        case drviers = "drivers"
+        case drivers = "drivers"
         case trips   = "trips"
     }
 }
